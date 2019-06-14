@@ -1,0 +1,188 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+textarea{
+    resize: none;
+    border-radius: 2pt;
+    border-color: rgb(187, 187, 187);
+    padding: 5px;
+}
+
+input[type="text"]{
+    border-style: solid;
+    border-radius: 2pt;
+    border-width: 1pt;
+    border-color: rgb(187, 187, 187);
+    padding: 5px;
+}
+
+.h1-mainTitle{
+    background-color: darkcyan;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-color: lightgray;
+}
+
+.index-header{
+    width: 600px;
+}
+
+.index-createButton-container{
+    margin-left: 35px;
+}
+
+.page-container{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-container{
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    padding: 0px 20px;
+}
+
+.index-ul{
+    list-style: none;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 35px;
+    padding: 0px;
+}
+
+.index-li{
+    padding: 5px 0px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.index-title{
+    font-weight: 500;
+}
+
+.index-description-shadow-container{
+    position: relative;
+    margin: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.index-description{
+    white-space: pre-wrap;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: darkcyan;
+    padding: 0px 5px;
+    line-height: 20px;
+    max-height: 55px;
+    width: 500px;
+    overflow-y: hidden;
+    word-wrap: break-word;
+}
+
+.index-linkButton-container{
+    margin-bottom: 20px;
+}
+
+.link-button{
+    border-style: solid;
+    border-color: black;
+    border-radius: 2pt;
+    border-width: 1pt;
+    padding: 2pt 8pt;
+    color: black;
+    text-decoration: none;
+    font-size: 12pt;
+    background-color: lightgray;
+}
+
+.link-button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 232, 232);
+}
+
+.index-description-fade::after{
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    bottom   : 0px;
+    left     : 5px;
+    width: 500px;
+    height: 10px;
+    background-image: linear-gradient(to top, whitesmoke, rgba(245, 245, 245, 0));
+}
+
+.checkBoxContainer{
+    position: relative;
+    margin-right: 25px;
+}
+
+.checkBoxButton{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.checkBox{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    border-width: 1pt;
+    border-radius: 2pt;
+    background-color: white;
+    pointer-events: none;
+}
+
+.checkBoxButton:hover ~ .checkBox{
+    background-color: rgb(200, 238, 255);;
+}
+
+.checkBoxActive{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    border-width: 1pt;
+    border-radius: 2pt;
+    background-color: darkcyan;
+    pointer-events: none;
+}
+
+.check{
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    top: 1px;
+    left: 5.5px;
+    transform: rotate(45deg);
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    pointer-events: none;
+}
+
+.detail-container{
+    width: 400px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}

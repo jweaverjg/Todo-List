@@ -1,0 +1,20 @@
+<div class="page-container">
+    <div class="page-sub-container">
+        <h2>Edit</h2>
+        <div>
+            <form action="" method="POST">
+                <label for="todo_title">Title</label>
+                <br>
+                <input type="text" name="todo_title" value="{{todo.todo_title}}">
+                <br>
+                <label for="todo_description">Description</label>
+                <br>
+                <textarea rows=5 cols=50 name="todo_description">{{todo.todo_description}}</textarea>
+                <br>
+                <input class="link-button" type="submit" value="Update">
+                <span> | </span>
+                <a class="link-button" href="/">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
