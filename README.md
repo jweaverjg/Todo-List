@@ -43,7 +43,7 @@ Next, navigate to the folder where you have downloaded the project file and ente
 To start the program and install the necessary dependencies.
 
 Dependencies are:
-*Express
-*Express-Handlebars
-*jquery
-*mysql
+* Express
+* Express-Handlebars
+* jquery
+* mysql
