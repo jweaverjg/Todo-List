@@ -28,14 +28,14 @@ input[type="text"]{
 }
 
 .h1-mainTitle{
-    background-color: darkcyan;
+    background-color: rgb(58, 58, 58);
     color: white;
     margin: 0px;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 0px 0px 5px 0px;
-    border-color: lightgray;
+    border-color: rgb(170, 170, 170);
 }
 
 .index-header{
@@ -56,6 +56,11 @@ input[type="text"]{
     border-style: solid;
     border-width: 0px 1px 0px 1px;
     padding: 0px 20px;
+}
+
+.username-container{
+    margin: 10px 15px;
+    margin-bottom: 20px;
 }
 
 .index-ul{
@@ -97,23 +102,57 @@ input[type="text"]{
 
 .index-linkButton-container{
     margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.link-button + .link-button {
+    margin-left: 10px;
+}
+
+input[type="submit"]{
+    min-width: 90px;
 }
 
 .link-button{
-    border-style: solid;
-    border-color: black;
-    border-radius: 2pt;
-    border-width: 1pt;
-    padding: 2pt 8pt;
-    color: black;
+    border-style: none;
+    padding: 3pt 9pt;
+    color: white;
     text-decoration: none;
+    font-weight: 500;
     font-size: 12pt;
-    background-color: lightgray;
+    background-color: rgb(58, 58, 58);
+    display: inline-block;
+    min-width: 65px;
+    text-align: center;
 }
 
 .link-button:hover{
     cursor: pointer;
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(85, 85, 85);
+}
+
+.link-button-alt{
+    border-style: none;
+    padding: 3pt 8pt;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: 500;
+    background-color: rgb(0, 102, 255);
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+.link-button-alt:hover{
+    cursor: pointer;
+    background-color: rgb(40, 126, 255);
+}
+
+.wide-button-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 .index-description-fade::after{

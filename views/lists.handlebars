@@ -1,0 +1,25 @@
+<h1 class="h1-mainTitle">To-do List</h1>
+<div class="page-container">
+    <div class="index-container">
+        <h2 class="index-header">Lists</h2>
+        <div class="username-container">User: {{username}}</div>
+        <div class="wide-button-container">
+            <a class="link-button-alt" href="/create-list?user={{user}}">Create New</a>
+        </div>
+        <ul class="index-ul">
+            {{#each response}}
+                <li class="index-li" value={{this.id}}>
+                    <span class="index-title">{{this.list_name}} - </span>
+                    <span>{{this.num_tasks}}</span>
+                    <div class="index-linkButton-container">
+                    <a class="link-button" href="/index?user={{@root.user}}&list={{this.id}}">Details</a>
+                    <a class="link-button" href="/delete-list?user={{@root.user}}&list={{this.id}}&nt={{this.num_tasks}}">Delete</a>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+        <span class="wide-button-container">
+        <a class="link-button-alt" href="/">Sign Out</a>
+        </span>
+    </div>
+</div>

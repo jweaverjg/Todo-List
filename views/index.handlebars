@@ -1,8 +1,9 @@
+<h1 class="h1-mainTitle">To-do List</h1>
 <div class="page-container">
     <div class="index-container">
         <h2 class="index-header">Tasks</h2>
-        <div class="index-createButton-container">
-            <a class="link-button" href="/create">Create New</a>
+        <div class="wide-button-container">
+            <a class="link-button-alt" href="/create?user={{user}}&list={{list}}">Create New</a>
         </div>
         <ul class="index-ul">
             {{#each todoList}}
@@ -17,14 +18,17 @@
                         <div class="index-description">{{this.todo_description}}</div>
                     </div>
                     <div class="index-linkButton-container">
-                    <a class="link-button" href="/detail?id={{this.id}}">Details</a>
-                    <span> | </span>
-                    <a class="link-button" href="/edit?id={{this.id}}">Edit</a>
-                    <span> | </span>
-                    <a class="link-button" href="/delete?id={{this.id}}">Delete</a>
+                    <a class="link-button" href="/detail?user={{@root.user}}&list={{@root.list}}&id={{this.id}}">Details</a>
+                    
+                    <a class="link-button" href="/edit?user={{@root.user}}&list={{@root.list}}&id={{this.id}}">Edit</a>
+                    
+                    <a class="link-button" href="/delete?user={{@root.user}}&list={{@root.list}}&id={{this.id}}">Delete</a>
                     </div>
                 </li>
             {{/each}}
         </ul>
+        <span class="wide-button-container">
+        <a class="link-button-alt" href="/lists?user={{user}}">Return to Lists</a>
+        </span>
     </div>
 </div>
